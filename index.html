@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Application Tracker</title>
 
-<link rel="stylesheet" href="style.css">
-
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,25 +16,27 @@
   <section>
     <div>
       <h3>Total</h3>
-      <p>0</p>
+      <p id="total-count">0</p>
     </div>
 
     <div>
       <h3>Interview</h3>
-      <p>0</p>
+      <p id="interview-count">0</p>
     </div>
 
     <div>
       <h3>Rejected</h3>
-      <p>0</p>
+      <p id="rejected-count">0</p>
     </div>
   </section>
 
   <!-- Available Jobs Section -->
   <section>
+
+    <!-- Title + Count -->
     <div>
       <h2>Available Jobs</h2>
-      <p>0 jobs</p>
+      <p><span id="job-count">0</span> jobs</p>
     </div>
 
     <!-- Tabs -->
@@ -44,38 +46,13 @@
       <button>Rejected</button>
     </div>
 
-    <!-- Jobs Container -->
-    <div>
-      <!-- Job cards will be added here later-->
+    <!-- Jobs Container (Dynamic Rendering হবে এখানে) -->
+    <div id="jobs-container"></div>
 
-<!-- Sample Job Card -->
-<div class="job-card">
-  <div class="card-header">
-    <h4>Mobile First Corp</h4>
-    <button class="delete-btn">🗑</button>
-  </div>
-
-  <p class="position">React Native Developer</p>
-  <p class="meta">Remote • Full-time • $130,000 - $175,000</p>
-
-  <span class="status">NOT APPLIED</span>
-
-  <p class="description">
-    Build cross-platform mobile applications using React Native.
-    Work closely with designers and backend engineers.
-  </p>
-
-  <div class="card-actions">
-    <button class="interview-btn">Interview</button>
-    <button class="rejected-btn">Rejected</button>
-  </div>
-</div>
-
-    </div>
   </section>
 
-<script src="app.js"></script>
+  <!-- JavaScript Link -->
+  <script src="app.js"></script>
 
 </body>
 </html>
-
