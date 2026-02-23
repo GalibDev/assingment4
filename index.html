@@ -1,66 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Job Application Tracker</title>
-
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <h1>Job Application Tracker</h1>
+  <main class="container">
 
-  <!-- Dashboard Section -->
-  <section>
-    <div>
-      <h3>Total</h3>
-      <p id="total-count">0</p>
-    </div>
+    <!-- Title -->
+    <h1 class="page-title">Job Application Tracker</h1>
 
-    <div>
-      <h3>Interview</h3>
-      <p id="interview-count">0</p>
-    </div>
+    <!-- Dashboard -->
+    <section class="dashboard">
+      <div class="dash-card">
+        <p class="dash-label">Total</p>
+        <h2 class="dash-value" id="total-count">0</h2>
+      </div>
 
-    <div>
-      <h3>Rejected</h3>
-      <p id="rejected-count">0</p>
-    </div>
-  </section>
+      <div class="dash-card">
+        <p class="dash-label">Interview</p>
+        <h2 class="dash-value green" id="interview-count">0</h2>
+      </div>
 
-  <!-- Available Jobs Section -->
-  <section>
+      <div class="dash-card">
+        <p class="dash-label">Rejected</p>
+        <h2 class="dash-value red" id="rejected-count">0</h2>
+      </div>
+    </section>
 
-    <!-- Title + Count -->
-    <div>
-      <h2>Available Jobs</h2>
-      <p><span id="job-count">0</span> jobs</p>
-    </div>
+    <!-- Jobs Section -->
+    <section class="jobs-section">
+      <div class="jobs-top">
+        <h3>Available Jobs</h3>
+        <p class="jobs-count"><span id="job-count">0</span> jobs</p>
+      </div>
 
-    <!-- Tabs -->
-    <div>
-<div>
-  <button class="tab active" data-tab="all">All</button>
-  <button class="tab" data-tab="interview">Interview</button>
-  <button class="tab" data-tab="rejected">Rejected</button>
-</div>
+      <div class="tabs">
+        <button class="tab active" data-tab="all">All</button>
+        <button class="tab" data-tab="interview">Interview</button>
+        <button class="tab" data-tab="rejected">Rejected</button>
+      </div>
 
-<div id="jobs-container"></div>
+      <div class="divider"></div>
 
-      <!--button>All</button>
-      <button>Interview</button>
-      <button>Rejected</button>-->
-    </div>
+      <div id="jobs-container"></div>
+    </section>
 
-    <!-- Jobs Container (Dynamic Rendering হবে এখানে) -->
-    <div id="jobs-container"></div>
+  </main>
 
-  </section>
-
-  <!-- JavaScript Link -->
   <script src="app.js"></script>
-
 </body>
 </html>
