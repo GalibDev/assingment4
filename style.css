@@ -33,3 +33,67 @@ section:first-of-type p {
   font-weight: bold;
   color: #111827;
 }
+
+
+
+
+/* Jobs Section Styling */
+
+/* Jobs section box */
+section:last-of-type {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Top row: title + job count */
+section:last-of-type > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+section:last-of-type h2 {
+  font-size: 16px;
+  color: #111827;
+}
+
+section:last-of-type p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Tabs */
+section:last-of-type > div:nth-child(2) {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+section:last-of-type button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+section:last-of-type button:hover {
+  background: #f3f4f6;
+}
+
+/* Active Tab (temporary visual) */
+section:last-of-type button:first-child {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+
+
+
+
