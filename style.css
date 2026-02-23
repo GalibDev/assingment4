@@ -1,0 +1,39 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f4f6fb;
+  padding: 30px;
+}
+
+/* Main Title */
+h1 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 25px;
+}
+
+/* Basic dashboard layout */
+section:first-of-type {
+  display: flex;
+  gap: 15px;
+}
+
+section:first-of-type div {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  width: 120px;
+  text-align: center;
+}
